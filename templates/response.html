@@ -1,1 +1,64 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example web page</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="myscript.js"></script>
+	  <script src="style.css"</script>
+    <script>
+window.onload = function () {
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Simple Line Chart"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+}
+</script>
+  </head>
+  <body>
+    <h1>Police Shooting Data With Interactive Graphs"</h1>
+	<br><br><br>
+	
+	<p>Race</p>
+	<form>
+	  <input type="checkbox" id="Asian" name="Asian" value="Asian"
+	  <label for="Asian">Asian</label><br>
+	  <input type="checkbox" id="Black" name="Black" value="Black"
+	  <label for="Black">Black</label><br>
+	  <input type="checkbox" id="Hispanic" name="Hispanic" value="Hispanic"
+	  <label for="Hispanic">Hispanic</label><br>
+	  <input type="checkbox" id="Native_American" name="Native_American" value="Native_American"
+	  <label for="Native_American">Native American</label><br>
+	  <input type="checkbox" id="White" name="White" value="White"
+	  <label for="White">White</label><br>
+	  <input type="checkbox" id="Other" name="Other" value="Other"
+	  <label for="Other">Other</label><br>
+	  <input type="checkbox" id="Unknown" name="Unknown" value="Unknown"
+	  <label for="Unknown">Unknown</label><br>
+	</form>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>
