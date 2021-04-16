@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Custom Graph</h1>
+{% endblock %}
