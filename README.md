@@ -1,2 +1,2 @@
 # Police-Shootings
-https://korkz.github.io/Police-Shootings/
+https://policeshootings.herokuapp.com/
