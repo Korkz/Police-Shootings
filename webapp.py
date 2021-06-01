@@ -1,8 +1,9 @@
-from flask import Flask, request, Markup, render_template, flash, url_for
+import os
+from flask import Flask, url_for, render_template, request
 from flask import redirect
 from flask import session
-import os
 import json
+
 app = Flask(__name__)
 
 @app.route("/")
