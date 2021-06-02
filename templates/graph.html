@@ -4,44 +4,47 @@
     <h1>Police Shooting Data With Interactive Graphs</h1>
 	<br><br>
 	
-	<p>Gender</p>
-	<form>
-	  <input type="checkbox" id="Male" name="Male" value="Male"
+	<p><b>Gender<b></p>
+	<form action='/response'>
+	  <input type="checkbox" id="Male" name="gender" value="Male"
 	  <label for="Male">Male</label><br>
-	  <input type="checkbox" id="Female" name="Female" value="Female"
+	  <input type="checkbox" id="Female" name="gender" value="Female"
 	  <label for="Female">Female</label><br>
-	  <input type="checkbox" id="Unknown/Other" name="Unknown/Other" value="Unknown/Other"
+	  <input type="checkbox" id="Unknown/Other" name="gender" value="Unknown/Other"
 	  <label for="Unknown/Other">Unknown/Other</label><br>
-	</form>
+	
 	<br><br>
 	
-	<p>Race</p>
-	<form>
-	  <input type="checkbox" id="Asian" name="Asian" value="Asian"
-	  <label for="Asian">Asian</label><br>
-	  <input type="checkbox" id="Black" name="Black" value="Black"
-	  <label for="Black">Black</label><br>
-	  <input type="checkbox" id="Hispanic" name="Hispanic" value="Hispanic"
-	  <label for="Hispanic">Hispanic</label><br>
-	  <input type="checkbox" id="Native_American" name="Native_American" value="Native_American"
-	  <label for="Native_American">Native American</label><br>
-	  <input type="checkbox" id="White" name="White" value="White"
-	  <label for="White">White</label><br>
-	  <input type="checkbox" id="Other" name="Other" value="Other"
-	  <label for="Other">Other</label><br>
-	  <input type="checkbox" id="Unknown" name="Unknown" value="Unknown"
-	  <label for="Unknown">Unknown</label><br>
-	</form>
+	<p><b>Race<b></p>
 
-	<p>Weapon</p>
-	<input type="checkbox" id="Gun" name="Gun" value="Gun"
-	  <label for="Gun">Gun</label><br>
-	  <input type="checkbox" id="Knife" name="Knife" value="Knife"
-	  <label for="Knife">Knife</label><br>
-	  <input type="checkbox" id="Toy_weapon" name="Toy_weapon" value="Toy_weapon"
-	  <label for="Toy_weapon">Toy_weapon</label><br>
-	  <input type="checkbox" id="Unarmed" name="Unarmed" value="Unarmed"
-	  <label for="Unarmed">Unarmed</label><br>
-	  <input type="checkbox" id="Other" name="Other" value="Other"
+	  <input type="checkbox" id="Asian" name="race" value="Asian"
+	  <label for="Asian">Asian</label><br>
+	  <input type="checkbox" id="Black" name="race" value="Black"
+	  <label for="Black">Black</label><br>
+	  <input type="checkbox" id="Hispanic" name="race" value="Hispanic"
+	  <label for="Hispanic">Hispanic</label><br>
+	  <input type="checkbox" id="Native_American" name="race" value="Native_American"
+	  <label for="Native_American">Native American</label><br>
+	  <input type="checkbox" id="White" name="race" value="White"
+	  <label for="White">White</label><br>
+	  <input type="checkbox" id="Other" name="race" value="Other"
 	  <label for="Other">Other</label><br>
+	  <input type="checkbox" id="Unknown" name="race" value="Unknown"
+	  <label for="Unknown">Unknown</label><br>
+	
+
+	<p><b>Weapon<b></p>
+	<input type="checkbox" id="Gun" name="weapon" value="Gun"
+	  <label for="Gun">Gun</label><br>
+	  <input type="checkbox" id="Knife" name="weapon" value="Knife"
+	  <label for="Knife">Knife</label><br>
+	  <input type="checkbox" id="Toy_weapon" name="weapon" value="Toy_weapon"
+	  <label for="Toy_weapon">Toy_weapon</label><br>
+	  <input type="checkbox" id="Unarmed" name="weapon" value="Unarmed"
+	  <label for="Unarmed">Unarmed</label><br>
+	  <input type="checkbox" id="Other" name="weapon" value="Other"
+	  <label for="Other">Other</label><br>
+          
+          <input type="submit" class="btn btn-info" value="Graph">
+      </form>
 {% endblock %}
