@@ -11,7 +11,7 @@ def render_main():
     return render_template('home.html')
 
 @app.route("/graph")
-def render_main():
+def render_graph():
     return render_template('graph.html')
 
 if __name__ =="__main__":
