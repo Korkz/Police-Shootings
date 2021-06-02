@@ -54,8 +54,14 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "light2",
 	title:{
-		text: "Simple Line Chart"
+		text: "Police Shootings"
 	},
+	axisY:{
+          title:"# of shootings"
+        }, 
+	axisX:{
+          title:"Time"
+        },
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
