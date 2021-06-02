@@ -8,6 +8,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def render_main():
+    return render_template('home.html')
+
+@app.route("/graph")
+def render_main():
     return render_template('graph.html')
 
 if __name__ =="__main__":
