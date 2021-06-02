@@ -14,5 +14,9 @@ def render_main():
 def render_graph():
     return render_template('graph.html')
 
+@app.route("/response")
+def render_response():
+    return render_template('response.html')
+
 if __name__ =="__main__":
     app.run(debug=False)
