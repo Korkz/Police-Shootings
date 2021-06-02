@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Example web page</title>
-    <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="myscript.js"></script>
-	<script src="style.css"></script>
-  </head>
-  <body>
+{% extends "layout.html" %}
+
+{% block content %}
     <h1>Police Shooting Data With Interactive Graphs</h1>
 	<br><br>
 	
@@ -51,5 +44,4 @@
 	  <label for="Unarmed">Unarmed</label><br>
 	  <input type="checkbox" id="Other" name="Other" value="Other"
 	  <label for="Other">Other</label><br>
-  </body>
-</html>
+{% endblock %}
