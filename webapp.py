@@ -15,6 +15,14 @@ def render_graph():
     return render_template('graph.html')
 
 @app.route("/response",methods=['GET','POST'])
+def get_number_of_shootings();
+    with open("police_shootings.json") as shootings_data:
+        number_of_shootings = json.load(shootings_data):
+    num_shootings = {}
+    for data in number_of_shootings
+        
+    
+
 def render_response():
     return render_template('response.html')
 
