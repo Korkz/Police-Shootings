@@ -5,7 +5,7 @@
 	<br><br>
 	
 	<p><b>Gender</b></p>
-	<form action='/response'>
+	<form action='/response' method="get">
 	  <input type="checkbox" id="Male" name="gender" value="Male"
 	  <label for="Male">Male</label><br>
 	  <input type="checkbox" id="Female" name="gender" value="Female"
@@ -32,6 +32,7 @@
 	  <input type="checkbox" id="Unknown" name="race" value="Unknown"
 	  <label for="Unknown">Unknown</label><br>
 	
+         <br><br>
 
 	<p><b>Weapon</b></p>
 	<input type="checkbox" id="Gun" name="weapon" value="Gun"
@@ -45,6 +46,7 @@
 	  <input type="checkbox" id="Other" name="weapon" value="Other"
 	  <label for="Other">Other</label><br>
           
+
           <input type="submit" class="btn btn-info" value="Graph">
       </form>
 {% endblock %}
