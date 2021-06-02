@@ -14,7 +14,7 @@ def render_main():
 def render_graph():
     return render_template('graph.html')
 
-@app.route("/response")
+@app.route("/response",methods=['GET','POST'])
 def render_response():
     return render_template('response.html')
 
